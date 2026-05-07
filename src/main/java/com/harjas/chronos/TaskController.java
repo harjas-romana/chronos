@@ -8,7 +8,7 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/tasks")
-@CrossOrigin(origins = "http://localhost:5173") // Allow Vite to talk to Spring
+@CrossOrigin(origins = { "http://localhost:5173", "https://chronos-zst4.onrender.com" })
 public class TaskController {
 
     private final TaskRepository taskRepository;
